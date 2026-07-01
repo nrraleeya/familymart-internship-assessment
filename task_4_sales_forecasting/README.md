@@ -20,7 +20,7 @@ Per the dataset criteria, the timeline contains no special holiday shocks or sud
 
 1. **Granular Series Partitioning:** Instead of building a single global model, the pipeline dynamically chunks data by individual `store` and `item` pairs. This ensures the model learns the exact localized velocity of a specific product at a specific location.
 2. **Positional Data Ingestion (`.iloc`):** The data preprocessing pipeline uses position-based array indexing rather than strict string matching. This immunizes the script against hidden column syntax variance, trailing whitespaces, or encoding adjustments during text-to-dataframe loading.
-3. **Discrete Integer Conversion:** Because sales volumes represent physical items, raw float predictions ($yhat$) are rounded to the nearest whole integer (`.round().astype(int)`) as a post-processing step. This satisfies the business logic of retail demand and aligns perfectly with the `sample_submission.csv` template.
+3. **Discrete Integer Conversion:** Because sales volumes represent physical items, raw float predictions ($yhat$) are rounded to the nearest whole integer (`.round().astype(int)`) as a post-processing step.
 
 ---
 
