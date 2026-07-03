@@ -15,3 +15,5 @@ Rather than relying on legacy, brittle character-matrix matching (like Tesseract
 2. To run the extraction engine, ensure the following official dependencies are installed in your environment:
 ```bash
 pip install google-genai requests pillow
+3. A valid API key is required. Before running the script, set your key as an environment variable:
+`export ASSESSMENT_API_KEY="your_secret_key"`
