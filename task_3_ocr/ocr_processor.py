@@ -29,7 +29,7 @@ class ReceiptProcessor:
 
 
 if __name__ == "__main__":
-    API_KEY = "AQ.Ab8RN6Jrvv_D70er0YnElhd2fwrG0DvFncyRmvD8qL8FcOt2ew"
+    API_KEY = "ASSESSMENT_API_KEY"
     
     processor = ReceiptProcessor(api_key=API_KEY)
     receipts = ["Technical Assessment/receipt1.png", "Technical Assessment/receipt2.png"]
